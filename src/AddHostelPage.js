@@ -71,7 +71,7 @@ function AddHostelPage() {
           value={formData.hostelName}
           onChange={handleChange}
           placeholder="Hostel Name"
-          required
+          required 
         />
         <input
           type="text"
@@ -109,7 +109,7 @@ function AddHostelPage() {
           placeholder="Hostel Price"
           required
         />
-
+        
         {/* Rating for Maintenance */}
         <select name="maintenance" value={formData.maintenance} onChange={handleChange} required>
           <option value="">Rate Maintenance (1-5)</option>

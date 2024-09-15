@@ -21,7 +21,7 @@ function HostelDetails() {
       } finally {
         setLoading(false);
       }
-    };
+    }; 
 
     fetchHostelDetails();
   }, [id]);
@@ -81,7 +81,7 @@ function HostelDetails() {
       <div>
         <h3>Photos:</h3>
         {hostel.photos.map((photo, index) => (
-          <img key={index} src={photo} alt={`Hostel Photo ${index + 1}`} />
+          <img key={index} src={photo} alt="" />
         ))}
       </div>
     </div>
