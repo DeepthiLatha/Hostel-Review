@@ -1,0 +1,121 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  background-image: url('C:\Users\kathu\Desktop\review_hostel\src\Hyderabad sky.jpg'); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background image to the viewport */
+  background-color: #f5f5f5; /* Fallback color */
+}
+
+.HostelDetails {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  margin: 0 auto; /* Center the content */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Limit maximum width to prevent overly stretched content */
+}
+
+.HostelDetails h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.HostelDetails .info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+.HostelDetails .info-container .info-item {
+  flex: 1;
+  min-width: 300px; /* Adjust as needed */
+  background-color: #b5e2f6;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.HostelDetails p.label {
+  font-weight: bold;
+  color: #007bff; /* Highlight color for labels */
+}
+
+.HostelDetails img {
+  display: block;
+  max-width: 100%;
+  height: auto; /* Ensure images scale proportionally */
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.HostelDetails .details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.HostelDetails .details-container div {
+  flex: 1;
+  min-width: 45%;
+}
+
+.HostelDetails .back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #60c3f8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.HostelDetails .back-btn:hover {
+  background-color: #03a3f9;
+}
+
+.HostelDetails .rating {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.HostelDetails .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Allow background to scroll with content on small screens */
+  }
+
+  .HostelDetails {
+    padding: 10px;
+    width: auto; /* Ensure the content container uses full width */
+    box-shadow: none; /* Remove box-shadow on small screens for better readability */
+  }
+
+  .HostelDetails .info-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .HostelDetails .details-container div {
+    min-width: 100%; /* Full width for details on small screens */
+  }
+}
